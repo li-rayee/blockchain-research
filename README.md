@@ -1,17 +1,17 @@
 # Blockchain Research
 
-深圳大学《区块链》课程攒下来的几个项目和实验，按主题分了三块。
+围绕区块链主题攒下来几个项目，按研究方向分了三块，从代币经济学建模一路做到底层密码学和链上合约。
 
 ```
 blockchain-research/
-├── meme-coin-investment/   # 大作业：Meme 币投资研究与代币经济学建模（Python）
-├── crypto-foundations/     # 实验 1–3：哈希、数字签名、椭圆曲线、比特币交易（Python + MATLAB）
-└── smart-contracts/        # 实验 4：Solidity 智能合约（ERC20 + 投票）
+├── meme-coin-investment/   # Meme 币投资研究与代币经济学建模（Python）
+├── crypto-foundations/     # 哈希、数字签名、椭圆曲线、比特币交易（Python + MATLAB）
+└── smart-contracts/        # Solidity 智能合约（ERC20 + 投票）
 ```
 
 ## Meme 币投资研究与代币经济学建模
 
-这是课程大作业，做的是 Dogecoin、Shiba Inu、Pepe 三种典型 Meme 币的价值逻辑对比，但没走"炒币笔记"那套，而是用可计算的代币经济学模型把它们拆开看：
+挑了 Dogecoin、Shiba Inu、Pepe 三种典型 Meme 币，没走炒币笔记那套，而是用可计算的代币经济学模型把它们拆开看：
 
 - `dogecoin_inflation.py` 跑适应性通胀模型，无限供应加上固定年增发
 - `shiba_deflation.py` 跑结构性通缩模型，超发加交易销毁
@@ -28,9 +28,9 @@ blockchain-research/
 - 比特币交易序列化，ECDSA、P2PKH、P2WPKH、txid、vsize 都覆盖，Python
 - 自实现的 Merkle–Damgård 哈希、模逆、有限域运算，MATLAB
 
-## 智能合约实验
+## 智能合约工程
 
-Solidity 工程，在 Remix IDE 里写、编译、部署验证。最小可用的 ERC20 代币 `MyToken`、支持委托的投票合约 `Ballot`、所有权模式和存储合约都在这。
+一个 Solidity 工程，在 Remix IDE 里写、编译、部署验证。最小可用的 ERC20 代币 `MyToken`、支持委托的投票合约 `Ballot`、所有权模式和存储合约都在这。
 
 ## 技术栈
 
@@ -38,8 +38,8 @@ Python、NumPy、Pandas、Matplotlib、SciPy，MATLAB 或 Octave，Solidity 0.8.
 
 ## 声明
 
-代码和报告都只用于课程学习，相关实现是原理演示，不是生产级安全实现。合约没审计、没上主网。报告里对代币的观点只作学术研究，不构成任何投资建议。
+相关实现是原理演示，不是生产级安全实现。合约没审计、没上主网。报告里对代币的观点只作学术分析，不构成任何投资建议。
 
 ---
 
-*Author: 李瑞宇 · 深圳大学 电子信息工程 · GPA 3.8/4.5*
+*Author: 李瑞宇*
